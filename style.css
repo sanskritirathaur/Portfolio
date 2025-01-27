@@ -145,7 +145,7 @@ element::-webkit-scrollbar {
     justify-content: start;
     flex-direction: column;
     gap: 20px;
-    height: 105vh;
+    height: 112vh;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
@@ -290,7 +290,7 @@ element::-webkit-scrollbar {
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-    height: 155vh;
+    height: 165vh;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
@@ -368,7 +368,7 @@ element::-webkit-scrollbar {
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
