@@ -27,6 +27,7 @@ body {
     width: 5%;
     height: 100vh;
     box-sizing: border-box;
+    /* background-color: aqua; */
 }
 
 .menus {
@@ -75,6 +76,7 @@ element::-webkit-scrollbar {
 }
 
 .right {
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,6 +90,7 @@ element::-webkit-scrollbar {
 }
 
 .part1 {
+    /* background-color: orange; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,12 +105,13 @@ element::-webkit-scrollbar {
 }
 
 .profession {
+    /* background-color: blue; */
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
-    height: 100%;
+    width: fit-content;
+    height: fit-content;
     padding-left: 250px;
 }
 
@@ -126,29 +130,34 @@ element::-webkit-scrollbar {
 }
 
 .photo {
+    /* background-color: aquamarine; */
     display: flex;
     align-items: center;
     justify-content: start;
-    height: 100%;
-    width: 40%;
+    
 }
 
 .photo img {
-    margin-bottom: 150px;
+    
     border-radius: 5%;
-    height: 500px;
+    /* background-color: gray; */
 }
 
+
+
 .part2 {
+    /* background-color: pink; */
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
     gap: 20px;
-    height: 112vh;
+    height: fit-content;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .aboutme,
@@ -285,15 +294,18 @@ element::-webkit-scrollbar {
 }
 
 .part3 {
+    /* background-color: lightgreen; */
     display: flex;
     align-items: self-start;
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-    height: 165vh;
+    height: fit-content;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .powerbiprojects,
@@ -363,15 +375,18 @@ element::-webkit-scrollbar {
 }
 
 .part4 {
+    /* background-color: aquamarine; */
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-    height: 75vh;
+    height: fit-content;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .workname {
@@ -403,15 +418,18 @@ element::-webkit-scrollbar {
 }
 
 .part5 {
+    /* background-color: blueviolet; */
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
     gap: 30px;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     padding-left: 130px;
     box-sizing: border-box;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .connectButtons {
@@ -445,7 +463,7 @@ element::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 0.488);
 }
 
-@media (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
     .left {
         display: flex;
         align-items: center;
@@ -464,7 +482,7 @@ element::-webkit-scrollbar {
         height: 31%;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.6);
-        /* border: 0.1px solid grey; */
+   
         border-radius: 0px 30px 30px 0px;
     }
 
@@ -516,7 +534,7 @@ element::-webkit-scrollbar {
         justify-content: start;
         flex-direction: column;
         width: 100%;
-        height: 50%;
+        height: 40%;
         padding-left: 15px;
     }
 
@@ -537,10 +555,10 @@ element::-webkit-scrollbar {
     .photo {
         display: flex;
         align-items: end;
-        justify-content: end;
-        height: 50%;
+        justify-content: center;
+        height: 60%;
         width: 100%;
-        padding-right: 20px;
+     
     }
 
     .photo img {
@@ -841,4 +859,656 @@ element::-webkit-scrollbar {
         transform: scale(1.05);
         background-color: rgba(255, 255, 255, 0.488);
     }
+} */
+/* @media only screen and (max-width: 576px) {
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        height: 31%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        
+        border-radius: 0px 30px 30px 0px;
+    }
+
+    .menus a {
+        font-size: 6px;
+    }
+
+    .home:hover img,
+    .home:hover a,
+    .about:hover img,
+    .about:hover a,
+    .project:hover img,
+    .project:hover a,
+    .experience:hover img,
+    .experience:hover a,
+    .contact:hover img,
+    .contact:hover a {
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.4));
+    }
+
+    .menus img {
+        width: 20px;
+        transition: 700ms all ease;
+    }
+
+    .right {
+        width: 90%;
+        height: 100vh;
+    }
+
+    .part1 {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100%;
+        gap: 0;
+    }
+
+    .line {
+        width: 85%;
+        height: 1px;
+        border: 1px solid grey;
+    }
+
+    .profession {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        padding-left: 15px;
+    }
+
+    .name {
+        font-family: "Fjalla One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .profname {
+        font-family: monospace;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .photo {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        height: 60%;
+        width: 100%;
+       
+    }
+
+    .photo img {
+        height: 280px;
+        margin-bottom: 30px;
+        border-radius: 15%;
+    }
+
+    .part2 {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        height: 95vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .aboutme,
+    .skills,
+    .projects,
+    .experiences {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        font-size: 42px;
+        margin-top: 10px;
+        text-shadow: -1px 0px 1px rgb(0, 0, 233);
+    }
+    .resume {
+        width: 40px;
+        height: 17px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(84, 76, 234, 0.663);
+        color: white;
+        font-size: 8px;
+        transition: all 300ms ease-out;
+    }
+    .resume:hover {
+        background-color: rgb(129, 99, 203);
+    }
+
+    .skills,
+    .certificates {
+        margin-top: 25px;
+        font-size: 25px;
+        text-shadow: -1px 1px 1px rgb(0, 179, 233);
+    }
+
+    .description,
+    .work,
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        font-size: 10px;
+        font-family: sans-serif;
+        gap: 5px;
+        color: rgba(31, 31, 31, 0.76);
+    }
+
+    .skillCards {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .skillCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        background-color: rgba(255, 255, 255, 0.6);
+        gap: 2px;
+        font-size: 9px;
+        width: 80px;
+        height: 35px;
+        border-radius: 8px;
+
+        box-shadow: 0px 0px 2px white;
+
+    }
+
+    .agileCard,
+    .mlCard {
+        font-size: 8px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .skillCard img {
+        width: 20px;
+    }
+
+    .certContainer {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .certContainer a {
+        text-decoration: none;
+    }
+
+    .certCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        box-shadow: -1px 1px 2px black;
+        height: 150px;
+        width: 150px;
+        color: rgb(83, 12, 69);
+        text-shadow: 0px 0px 0.7px blue;
+        border-radius: 15px;
+        font-size: 13px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        gap: 7px;
+        transition: all 500ms ease-out;
+    }
+
+    .certCard:hover {
+        transform: scale(1.05);
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .certCard img {
+        width: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .part3 {
+        display: flex;
+        align-items: self-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 15px;
+        height: 160vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .powerbiprojects,
+    .excelprojects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        width: 85%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .projectCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .projectCard {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 2px 3px rgba(15, 111, 146, 0.8);
+        height: 250px;
+        width: 250px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .projectCard img {
+        height: 150px;
+        width: 250px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .projectName {
+        padding-left: 10px;
+        font-size: 18px;
+        font-family: system-ui;
+        color: #3e4265f3;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .seeCode {
+        width: 45px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: white;
+        font-size: 7px;
+        margin-left: 195px;
+        margin-top: 20px;
+    }
+
+    .airport a .seeCode {
+        margin-top: 0px;
+    }
+
+    .part4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        height: 90vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .work,
+    .content {
+        font-size: 15px;
+    }
+
+    .workname {
+        font-weight: 600;
+    }
+
+    .styleLine {
+        font-style: italic;
+        font-family: system-ui;
+    }
+
+    .seeWork {
+        width: 60px;
+        height: 25px;
+        border-radius: 7px;
+        border: 0;
+        background-color: rgb(84, 76, 234);
+        color: white;
+        font-size: 8px;
+        margin-top: 15px;
+    }
+
+    .part5 {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+        height: 50vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .connectButtons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .connectButtons button {
+        border: 0;
+        border-radius: 15px;
+        width: 70px;
+        height: 35px;
+        background-color: transparent;
+        transition: 500ms all ease;
+    }
+
+    .connectButtons button img {
+        height: 25px;
+    }
+
+    .connectButtons a:nth-child(1) button img {
+        height: 20px;
+    }
+
+    .connectButtons button:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.488);
+    }
+} */
+
+/* Reponsive part1 */
+@media only screen and (max-width: 768px) {
+    .connectButtons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        width: 100%;
+        height: 20%;
+    }
+    .part1{
+        flex-direction: column-reverse;
+
+    }
+    .photo img {
+        padding-bottom: 20px;
+        width: 200px;
+    }
+    .profession{
+        /* background-color: bisque; */
+        font-size: 50px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .name{
+        font-size: 65px;
+    }
+    .profname{
+        font-size: 20px;
+    }
+    .left{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .projectCards{
+        gap: 30px;
+        
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .part1{
+        margin-top: -30px;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        align-items: centers;
+    }
+    .name{
+        padding-left: 50px;
+        display: flex;
+        font-size: 55px;
+      
+    }
+    .profname{
+        
+        font-size: 20px;
+        padding-left: 50px;
+        
+    }
+    .left{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .part2{
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .aboutme{
+        font-size: 50px;
+    }
+    .description{
+        /* background-color: lightgreen; */
+        width: 240px;
+        font-size: 16px;
+        
+    }
+    .resume{
+        margin-top: 20px;
+    }
+
+    .skills{
+        font-size: 45px;
+    }
+
+    .skillCards div{
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .part3{
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .projects{
+        font-size: 45px;
+        
+    }
+    .projectCards{
+        gap: 30px;
+        
+    }
+    .projectCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: fit-content;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+    .projectCard img{
+        width: 250px;
+        height: 150px;
+    }
+    .projectName{
+        font-size: 20px;
+    }
+    .projectCard button{
+        margin: 0;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        height: 31%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+   
+        border-radius: 0px 30px 30px 0px;
+    }
+
+    .menus a {
+        font-size: 6px;
+    }
+
+    .home:hover img,
+    .home:hover a,
+    .about:hover img,
+    .about:hover a,
+    .project:hover img,
+    .project:hover a,
+    .experience:hover img,
+    .experience:hover a,
+    .contact:hover img,
+    .contact:hover a {
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.4));
+    }
+
+    .menus img {
+        width: 20px;
+        transition: 700ms all ease;
+    }
+
+    .part4{
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .experiences{
+        font-size: 45px;
+    }
+    .part4 li{
+        /* background-color: bisque; */
+        width: 200px;
+        font-size: 14px;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+    .part4 ul{
+        margin-left: 0px;
+        padding-left: 20px;
+        
+    }
+
+    .part5{
+        margin: 0;
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact{
+        font-size: 40px;
+    }
+
+    .content{
+        /* padding-left: 20px; */
+        /* background-color: aqua; */
+        width: 250px;
+        /* align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex; */
+        font-size: 16px;
+
+    }
+
+    .connectButtons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .connectButtons button {
+        border: 0;
+        border-radius: 15px;
+        width: 70px;
+        height: 35px;
+        background-color: transparent;
+        transition: 500ms all ease;
+       
+        
+       
+        
+    }
+
+    .connectButtons button img {
+        height: 25px;
+    }
+
+    .connectButtons a:nth-child(1) button img {
+        height: 20px;
+    }
+
+    .connectButtons button:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.488);
+    }
+    
+    
 }
