@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Itim&family=Noto+Sans:wght@100..900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Russo+One&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@100..900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Russo+One&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Fjalla+One&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@100..900&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Russo+One&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(to right,
+            rgb(240, 252, 255),
+            rgb(225, 232, 253),
+            rgb(210, 212, 255),
+            rgb(210, 212, 255),
+            rgb(210, 212, 255),
+            rgb(202, 205, 255));
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30px;
+    height: 35%;
+    width: 100%;
+}
+
+.menus a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(58, 56, 56);
+    transition: 500ms all ease;
+}
+
+.home:hover img,
+.home:hover a,
+.about:hover img,
+.about:hover a,
+.project:hover img,
+.project:hover a,
+.experience:hover img,
+.experience:hover a,
+.contact:hover img,
+.contact:hover a {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+}
+
+.menus img {
+    width: 35px;
+    transition: 700ms all ease;
+}
+
+/* Works for WebKit-based browsers (Chrome, Edge, Safari) */
+element::-webkit-scrollbar {
+    display: none;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 95%;
+    height: 100vh;
+    box-sizing: border-box;
+    transition-duration: 3s all ease;
+}
+
+.part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 103vh;
+    width: 100%;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    border: 1px solid grey;
+}
+
+.profession {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding-left: 250px;
+}
+
+.name {
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 85px;
+    width: 100%;
+}
+
+.profname {
+    font-family: monospace;
+    font-size: 40px;
+    width: 100%;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 40%;
+}
+
+.photo img {
+    margin-bottom: 150px;
+    border-radius: 5%;
+    height: 500px;
+}
+
+.part2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    height: 105vh;
+    width: 100%;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+.aboutme,
+.skills,
+.certificates,
+.projects,
+.experiences {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: "Kanit", serif;
+    width: 90%;
+    font-size: 70px;
+    margin-top: 30px;
+    text-shadow: -2px 2px 1px rgb(0, 0, 233);
+}
+
+.aboutme {
+    margin-top: 5px;
+}
+
+.skills,
+.certificates {
+    margin-top: 0;
+    font-size: 50px;
+    text-shadow: -1px 1px 1px rgb(0, 179, 233);
+}
+
+
+.description,
+.work,
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    font-family: sans-serif;
+    gap: 10px;
+    color: rgba(31, 31, 31, 0.76);
+}
+
+.resume {
+    width: 65px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(84, 76, 234, 0.663);
+    color: white;
+    font-size: 12px;
+    transition: all 300ms ease-out;
+}
+
+.resume:hover {
+    background-color: rgb(129, 99, 203);
+}
+
+.skillCards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.skillCard {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    gap: 5px;
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px white;
+}
+
+.agileCard,
+.mlCard {
+    font-size: 13px;
+    /* font-weight: bold; */
+    justify-content: center;
+    padding-left: 0;
+}
+
+.skillCard img {
+    width: 25px;
+}
+
+.certContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 100%;
+}
+
+.certContainer a {
+    text-decoration: none;
+}
+
+.certCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: -2px 2px 3px black;
+    height: 150px;
+    width: 150px;
+    color: rgb(83, 12, 69);
+    text-shadow: 0px 0px 0.7px blue;
+    border-radius: 15px;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bold; */
+    gap: 7px;
+    transition: all 500ms ease-out;
+}
+
+.certCard:hover {
+    transform: scale(1.05);
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.certCard img {
+    width: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.part3 {
+    display: flex;
+    align-items: self-start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    height: 155vh;
+    width: 100%;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+.powerbiprojects,
+.excelprojects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projectCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.projectCard {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 8px rgba(15, 111, 146, 0.8);
+    height: 400px;
+    width: 400px;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.projectCard img {
+    height: 230px;
+    width: 400px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.projectName {
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: system-ui;
+    color: #3e4265f3;
+    font-weight: bold;
+    width: 100%;
+}
+
+.seeCode {
+    width: 70px;
+    height: 35px;
+    border-radius: 40px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 12px;
+    margin-left: 315px;
+    margin-top: 50px;
+    transition: all 500ms ease-out;
+}
+
+.seeCode:hover {
+    color: white;
+    background-color: black;
+}
+
+.airport a .seeCode {
+    margin-top: 0px;
+}
+
+.part4 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    height: 65vh;
+    width: 100%;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+.workname {
+    font-weight: 600;
+}
+
+.work {
+    justify-content: start;
+}
+
+.seeWork {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(84, 76, 234);
+    color: white;
+    font-size: 12px;
+    transition: all 300ms ease-out;
+}
+
+.seeWork:hover {
+    background-color: rgb(119, 82, 210);
+}
+
+.styleLine {
+    font-style: italic;
+    font-family: system-ui;
+}
+
+.part5 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    width: 100%;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+.connectButtons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    width: 100%;
+    height: 20%;
+}
+
+.connectButtons button {
+    border: 0;
+    border-radius: 15px;
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    transition: 500ms all ease;
+}
+
+.connectButtons button img {
+    height: 45px;
+}
+
+.connectButtons a:nth-child(1) button img {
+    height: 40px;
+}
+
+.connectButtons button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.488);
+}
+
+@media (max-width: 576px) {
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        height: 31%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+        /* border: 0.1px solid grey; */
+        border-radius: 0px 30px 30px 0px;
+    }
+
+    .menus a {
+        font-size: 6px;
+    }
+
+    .home:hover img,
+    .home:hover a,
+    .about:hover img,
+    .about:hover a,
+    .project:hover img,
+    .project:hover a,
+    .experience:hover img,
+    .experience:hover a,
+    .contact:hover img,
+    .contact:hover a {
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.4));
+    }
+
+    .menus img {
+        width: 20px;
+        transition: 700ms all ease;
+    }
+
+    .right {
+        width: 90%;
+        height: 100vh;
+    }
+
+    .part1 {
+        align-items: start;
+        justify-content: start;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100%;
+        gap: 0;
+    }
+
+    .line {
+        width: 85%;
+        height: 1px;
+        border: 1px solid grey;
+    }
+
+    .profession {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        padding-left: 15px;
+    }
+
+    .name {
+        font-family: "Fjalla One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .profname {
+        font-family: monospace;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .photo {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        height: 50%;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .photo img {
+        height: 280px;
+        margin-bottom: 30px;
+        border-radius: 15%;
+    }
+
+    .part2 {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 10px;
+        height: 95vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .aboutme,
+    .skills,
+    .projects,
+    .experiences {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+        font-size: 42px;
+        margin-top: 10px;
+        text-shadow: -1px 0px 1px rgb(0, 0, 233);
+    }
+    .resume {
+        width: 40px;
+        height: 17px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgba(84, 76, 234, 0.663);
+        color: white;
+        font-size: 8px;
+        transition: all 300ms ease-out;
+    }
+    .resume:hover {
+        background-color: rgb(129, 99, 203);
+    }
+
+    .skills,
+    .certificates {
+        margin-top: 25px;
+        font-size: 25px;
+        text-shadow: -1px 1px 1px rgb(0, 179, 233);
+    }
+
+    .description,
+    .work,
+    .content {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        font-size: 10px;
+        font-family: sans-serif;
+        gap: 5px;
+        color: rgba(31, 31, 31, 0.76);
+    }
+
+    .skillCards {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .skillCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        background-color: rgba(255, 255, 255, 0.6);
+        gap: 2px;
+        font-size: 9px;
+        width: 80px;
+        height: 35px;
+        border-radius: 8px;
+
+        box-shadow: 0px 0px 2px white;
+
+    }
+
+    .agileCard,
+    .mlCard {
+        font-size: 8px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .skillCard img {
+        width: 20px;
+    }
+
+    .certContainer {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .certContainer a {
+        text-decoration: none;
+    }
+
+    .certCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        box-shadow: -1px 1px 2px black;
+        height: 150px;
+        width: 150px;
+        color: rgb(83, 12, 69);
+        text-shadow: 0px 0px 0.7px blue;
+        border-radius: 15px;
+        font-size: 13px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        gap: 7px;
+        transition: all 500ms ease-out;
+    }
+
+    .certCard:hover {
+        transform: scale(1.05);
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .certCard img {
+        width: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .part3 {
+        display: flex;
+        align-items: self-start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 15px;
+        height: 160vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .powerbiprojects,
+    .excelprojects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        width: 85%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .projectCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .projectCard {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 2px 3px rgba(15, 111, 146, 0.8);
+        height: 250px;
+        width: 250px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .projectCard img {
+        height: 150px;
+        width: 250px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .projectName {
+        padding-left: 10px;
+        font-size: 18px;
+        font-family: system-ui;
+        color: #3e4265f3;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .seeCode {
+        width: 45px;
+        height: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: white;
+        font-size: 7px;
+        margin-left: 195px;
+        margin-top: 20px;
+    }
+
+    .airport a .seeCode {
+        margin-top: 0px;
+    }
+
+    .part4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        height: 90vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .work,
+    .content {
+        font-size: 15px;
+    }
+
+    .workname {
+        font-weight: 600;
+    }
+
+    .styleLine {
+        font-style: italic;
+        font-family: system-ui;
+    }
+
+    .seeWork {
+        width: 60px;
+        height: 25px;
+        border-radius: 7px;
+        border: 0;
+        background-color: rgb(84, 76, 234);
+        color: white;
+        font-size: 8px;
+        margin-top: 15px;
+    }
+
+    .part5 {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+        height: 50vh;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .connectButtons {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+        width: 100%;
+        height: 20%;
+    }
+
+    .connectButtons button {
+        border: 0;
+        border-radius: 15px;
+        width: 70px;
+        height: 35px;
+        background-color: transparent;
+        transition: 500ms all ease;
+    }
+
+    .connectButtons button img {
+        height: 25px;
+    }
+
+    .connectButtons a:nth-child(1) button img {
+        height: 20px;
+    }
+
+    .connectButtons button:hover {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.488);
+    }
+}
