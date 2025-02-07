@@ -314,7 +314,7 @@ element::-webkit-scrollbar {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 95%;
-    gap: 60px;
+    gap: 35px;
 }
 
 .projectCard {
