@@ -201,14 +201,14 @@ element::-webkit-scrollbar {
 }
 
 .resume {
-    width: 65px;
-    height: 30px;
+    width: 95px;
+    height: 45px;
     margin-top: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
     background-color: rgba(84, 76, 234, 0.663);
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     transition: all 300ms ease-out;
 }
 
@@ -308,21 +308,13 @@ element::-webkit-scrollbar {
     padding-top: 50px;
 }
 
-.powerbiprojects,
-.excelprojects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .projectCards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 95%;
+    gap: 60px;
 }
 
 .projectCard {
@@ -1490,11 +1482,7 @@ element::-webkit-scrollbar {
         width: 70px;
         height: 35px;
         background-color: transparent;
-        transition: 500ms all ease;
-       
-        
-       
-        
+        transition: 500ms all ease;  
     }
 
     .connectButtons button img {
